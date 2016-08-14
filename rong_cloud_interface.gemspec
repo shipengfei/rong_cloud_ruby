@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = RongCloudInterface::VERSION
   spec.authors       = ["Pengfei Shi"]
   spec.email         = ["spfzzz@163.com"]
-
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.licenses   =   ['MIT']
+  
+  spec.summary       = %q{rong cloud interface.}
+  spec.description   = %q{rong cloud sdk ruby.}
   spec.homepage      = "https://github.com/shipengfei/rong_cloud_ruby"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -26,8 +27,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", '>= 3.2.0'
+  spec.add_runtime_dependency "activesupport", '>= 3.2.0'
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rails", ">= 3.2.0"
 end

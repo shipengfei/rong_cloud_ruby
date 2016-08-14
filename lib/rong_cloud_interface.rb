@@ -1,6 +1,7 @@
+require "rong_cloud_interface/version"
 require "rong_cloud_interface/client"
 require "rong_cloud_interface/message_type"
-require "rong_cloud_interface/version"
+require "active_support/configurable"
 
 module RongCloudInterface
 
